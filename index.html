@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather App</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+                <main class="main-container">
+                    <header class="input-container">
+                        <input class="city-input"   type="text" placeholder=" search city ">
+                        <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </header>
+                    <section class="weather-info" style="display: none;">
+                        <div class="location-data">
+                            <div class="location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <h4 class="country-txt">Tanta</h4>
+                            </div>
+                            <h4 class="current-data-txt regluer-txt">wed ,07 Aug</h4>
+                        </div>
+                        <div class="weather-summary-container">
+                            <img src="/weather/clouds.svg" alt="" class="weather-summry-img">
+                            <div class="weather-summry-info">
+                                <h2 class="temp-txt">29 ℃</h2>
+                                <h2 class="condition-txt regluer-txt">clouds</h2>
+                            </div>
+                        </div>
+                            <div class="weather-conditions-container">
+                                <div class="condtion-item">
+                                    <span class="material-symbols-out">
+                                            <i class="fa-solid fa-droplet"></i>
+                                        </span>
+                                    </div>
+                                    <div class="condtion-info">
+                                        <h4 class="regluer-txt">humidity</h4>
+                                        <h4 class="humditiy-value-txt">55%</h4>
+                                    </div>
+                                <div class="condtion-item">
+                                    <span class="material-symbols-out">
+                                        <i class="fa-solid fa-wind"></i>
+                                    </span>
+                                </div>
+                                    <div class="condtion-info">
+                                        <h4 class="regluer-txt">wind-speed</h4>
+                                        <h4 class="wind-value-txt">2 M/s</h4>
+                                    </div>
+                            </div>
+                            <div class="forecast-items-container">
+                                <div class="forecast-item">
+                                    <h5 class="forecast-item-date regluer-txt">05 Aug</h5>
+                                    <img src="./weather/thunderstorm.svg" alt="" class="forecast-item-img">
+                                    <h5 class="forecast-item-temp">29 ℃</h5>
+                                </div>
+                                <div class="forecast-item">
+                                    <h5 class="forecast-item-date regluer-txt">05 Aug</h5>
+                                    <img src="./weather/thunderstorm.svg" alt="" class="forecast-item-img">
+                                    <h5 class="forecast-item-temp">29 ℃</h5>
+                                </div>
+                                <div class="forecast-item">
+                                    <h5 class="forecast-item-date regluer-txt">05 Aug</h5>
+                                    <img src="./weather/thunderstorm.svg" alt="" class="forecast-item-img">
+                                    <h5 class="forecast-item-temp">29 ℃</h5>
+                                </div>
+                                <div class="forecast-item">
+                                    <h5 class="forecast-item-date regluer-txt">05 Aug</h5>
+                                    <img src="./weather/thunderstorm.svg" alt="" class="forecast-item-img">
+                                    <h5 class="forecast-item-temp">29 ℃</h5>
+                                </div>
+                                <div class="forecast-item">
+                                    <h5 class="forecast-item-date regluer-txt">05 Aug</h5>
+                                    <img src="./weather/thunderstorm.svg" alt="" class="forecast-item-img">
+                                    <h5 class="forecast-item-temp">29 ℃</h5>
+                                </div>
+                            </div>
+                    </section>
+                    <section class="search-city section-message">
+                        <img src="/message/search-city.png" alt="">
+                        <div>
+                            <h1>search city</h1>
+                            <h4 class="regluer-txt">
+                                Find out the weather conditions of the city
+                            </h4>
+                        </div>
+                    </section>
+                    <section class="not-found section-message" style="display: none;">
+                        <img  src="/message/not-found.png" alt="">
+                        <div>
+                            <h1>search city</h1>
+                            <h4 class="regluer-txt">
+                                Find out the weather conditions of the city
+                            </h4>
+                        </div>
+                    </section>
+                </main>
+                <script src="script.js"></script>
+</body>
+</html>
